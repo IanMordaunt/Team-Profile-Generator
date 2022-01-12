@@ -1,4 +1,4 @@
-# README Generator
+# Team Profile Generator
 
   ## Table of Contents
   *[Description](#description)
@@ -19,23 +19,24 @@
   <a name='description'></a>
   ## Description
 
-  An application to help expedite the creation process of a ReadMe file from the cammand line
+  Team Profile Generator help create teams of employees from the command line. Using -Node.js -JavaScript -HTML -CSS
 
   ## Links
 
   GitHub Repository: https://github.com/IanMordaunt/Team-Profile-Generator
   
-  README-Generator Demo: 
+  README-Generator Demo: https://vimeo.com/manage/videos/665085517
 
   <a name='installation'></a>
   ## Installation
 
   init inquirer
+  init jest
 
   <a name='usage'></a>
   ## Usage
 
-  To assist in the generation of a ReadMe file
+  The application can be used to produce teams of employees using the employee roles to establish information criteria for each.
 
   <a name='contribute'></a>
   ## Contributers
