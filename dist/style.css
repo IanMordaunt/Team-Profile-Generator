@@ -33,11 +33,21 @@ span {
        
 }
 
-/* .card-container {
+.continer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
+.card-role {
+text-align: center;
     
-} */
+}
 
+/* img {
+    transform: scale(2);
+    margin-top: -43%;
+} */
 
 
 .col-6 {
@@ -53,4 +63,13 @@ span {
 
 ul {
     text-align: center;
+    
+}
+
+.footer-container {
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0%;
 }

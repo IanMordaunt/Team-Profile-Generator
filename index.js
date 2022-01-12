@@ -11,10 +11,6 @@ const Manager = require('./lib/Manager')
 // Employee data 
 const employeeProfile = [];
 
-// function init() {
-  
-// }
-
 // Function for Manager Prompts
 function managerProfile() {
     inquirer.prompt([
@@ -71,6 +67,12 @@ function managerProfile() {
      .catch((err) => {
      console.error(err)
     });
+}
+
+// Function for generation of HTML
+function createPage() {
+    headerHTML();
+    addCard();
 }
 
 // Function for Engineer Prompts
@@ -191,12 +193,6 @@ function internProfile() {
     
 }
 
-// Function for generation of HTML
-function createPage() {
-    headerHTML();
-    addCard();
-    footerHtml();
-}
 
 // Function that generates the html:5 (temp-code) and header of the webpage
 function headerHTML() {
@@ -230,19 +226,18 @@ function headerHTML() {
 function addCard() {
     let data = "";
     for(const i of employeeProfile) {
-        data = `<div class="card-container">
-                    <div class="col-6">
-                        <div class="card mx-auto mb-3" style="width: 18rem">
-                            <h4 class="card-header">${i.getName()}</h4>
-                            <h5 class="card-role">${i.getRole()}</h5>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">ID: ${i.getId()}</li>
-                                <li class="list-group-item">Email: <a href="mailto:${i.getEmail()}" target="_blank">${i.getEmail()}<a></li>
-                                <li class="list-group-item">${uniqueInfo(i)}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>`;
+        data = `
+            <div class="col-6">
+                <div class="card mx-auto mb-3" style="width: 18rem">
+                     <h4 class="card-header">${i.getName()}</h4>
+                     <h5 class="card-role">${i.getRole()}</h5> 
+                     <ul class="list-group list-group-flush">
+                         <li class="list-group-item">ID: ${i.getId()}</li>
+                          <li class="list-group-item">Email: <a href="mailto:${i.getEmail()}" target="_blank">${i.getEmail()}<a></li>
+                           <li class="list-group-item">${uniqueInfo(i)}</li>
+                      </ul>
+                 </div>
+             </div>`;
     }
 
 // Write data (string) to index.html
@@ -264,6 +259,19 @@ function uniqueInfo(employee) {
         return `Office Number: ${employee.getOfficeNumber()}`;
     }
 }
+
+// function uniqueIcon(employee) {
+    
+//     if (employee.getRole() === "Engineer") {
+//        return `src="../dist/assets/glasses.png"`;
+
+//     }else if (employee.getRole() === "Intern") {
+//        return `src="../dist/assets/school.png"`
+       
+//    }else {
+//        return `src="../dist/assets/coffee.png"`;
+//    }
+// }
 
 function footerHtml () {
 
