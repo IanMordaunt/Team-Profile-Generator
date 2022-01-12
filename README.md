@@ -46,7 +46,7 @@
   <a name='tests'></a>
   ## Test
 
-  npm jest
+  ![alt txt]("https://github.com/IanMordaunt/Team-Profile-Generator/blob/main/assets/Screen%20Shot%202022-01-11%20at%2010.29.41%20PM.png")
 
   <a name='license'></a>
   ## Lincenses
