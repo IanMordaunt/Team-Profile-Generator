@@ -1,0 +1,56 @@
+
+body {
+    background-color: rgb(216, 212, 189);
+   
+}
+
+.navbar {
+    font-size: 20rem;
+    color: rgb(216, 212, 189);
+    margin-top: -1%;
+    margin-bottom: 1%;
+}
+
+.navbar-brand {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    color: rgb(216, 212, 189);
+    font-weight: 700;
+}
+
+span {
+    font-size: 20rem;
+    color: rgb(216, 212, 189);
+}
+
+.container-fluid {
+    background-color: cadetblue;
+    color: rgb(216, 212, 189);
+   padding-top: 20px;
+   padding-bottom: 20px;
+    font-size: 20rem;
+    margin-bottom: -1%;
+       
+}
+
+.card-container {
+
+    
+}
+
+
+
+.col-6 {
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.card-header {
+    background-color:cadetblue;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+ul {
+    text-align: center;
+}
